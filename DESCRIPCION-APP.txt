@@ -1,0 +1,74 @@
+NEXALAB - DESCRIPCION DE LA APLICACION
+======================================
+
+QUE ES
+------
+NexaLab es una aplicacion web de demostracion para administrar un negocio de
+reparacion de computadoras, celulares, impresoras, consolas y otros equipos.
+Permite que clientes soliciten reparaciones y consulten su avance, mientras
+tecnicos y administradores coordinan el trabajo desde sus propios paneles.
+
+QUE PUEDE HACER
+---------------
+- Mostrar servicios de reparacion, informacion y precios base.
+- Permitir el registro e inicio de sesion de clientes, tecnicos y administradores.
+- Recibir solicitudes con el tipo de servicio, modelo, descripcion del problema
+  y fotos del equipo.
+- Asignar tecnicos, actualizar el estado de una reparacion y notificar los cambios.
+- Crear presupuestos con mano de obra, repuestos e IVA para que el cliente los
+  acepte o rechace.
+- Controlar repuestos, existencias, proveedores y piezas que se deben pedir.
+- Registrar un pago de demostracion, generar un comprobante PDF y autorizar
+  la entrega del equipo.
+- Consultar ordenes y su historial, conversar por chat y calificar el servicio.
+- Registrar gastos y consultar indicadores y reportes descargables en PDF y CSV.
+- Crear fichas de servicio con un codigo QR para consultar el seguimiento.
+
+TIPOS DE USUARIO
+----------------
+Cliente:
+Solicita reparaciones, sube fotos, revisa el estado de sus equipos, responde a
+presupuestos, registra el pago de demostracion y califica el servicio terminado.
+
+Tecnico:
+Consulta los trabajos que tiene asignados, registra el avance, prepara
+presupuestos, informa cuando falta una pieza y se comunica con el cliente y el
+administrador.
+
+Administrador:
+Supervisa las reparaciones, asigna tecnicos, administra personal, clientes,
+inventario y tarifas, registra gastos, revisa reportes y autoriza la entrega.
+
+FLUJO DE UNA REPARACION
+-----------------------
+1. El cliente registra el equipo y describe el problema.
+2. El administrador asigna un tecnico.
+3. El tecnico diagnostica el equipo y prepara un presupuesto.
+4. El cliente acepta o rechaza el presupuesto.
+5. Si lo acepta, se realiza la reparacion y se actualiza el estado.
+6. Cuando el equipo esta listo, el cliente registra el pago de demostracion.
+7. El administrador autoriza la entrega y el tecnico marca el equipo como entregado.
+8. El cliente puede dejar una calificacion.
+
+COMO PROBARLA
+-------------
+Abre el archivo index.html en un navegador. No requiere instalacion ni servidor.
+Se necesita conexion a internet para cargar Tailwind CSS, las bibliotecas de PDF
+y QR, y las fotografias externas.
+
+Usuarios de demostracion (contrasena para todos: 1234):
+- Administrador: admin@demo.com
+- Tecnico:       tecnico@demo.com
+- Cliente:       cliente@demo.com
+
+Los codigos de seguimiento de ejemplo tienen el formato NL-101. El codigo se
+forma con el prefijo NL- y el numero de la orden.
+
+LIMITACIONES
+------------
+Esta version es solo una demostracion. Los datos se guardan en el almacenamiento
+local del navegador y no se sincronizan entre dispositivos. Los pagos no se
+procesan realmente: el flujo solo simula el registro de un pago. Tampoco hay un
+servidor, base de datos central ni servicio real de correo o notificaciones.
+Para operar un negocio real se necesita implementar un backend seguro, una base
+de datos y una pasarela de pagos.
