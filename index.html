@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#f4f6f3" />
+    <meta name="description" content="NexaLab: diagnóstico, reparación y seguimiento digital para tus equipos." />
+    <title>NexaLab – Reparación tecnológica</title>
+
+    <!-- Librerías externas: Tailwind (diseño), jsPDF (PDF) y qrcodejs (códigos QR) -->
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Aquí se dibuja toda la aplicación -->
+    <div id="app"></div>
+
+    <!-- Mensajes breves -->
+    <div id="toast" class="fixed bottom-5 left-1/2 -translate-x-1/2 g1 text-white px-5 py-2 rounded-full font-semibold shadow-xl hidden z-[60]"></div>
+
+    <!-- Código de la aplicación (el orden importa) -->
+    <script src="js/data.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/users.js"></script>
+    <script src="js/photos.js"></script>
+    <script src="js/orders.js"></script>
+    <script src="js/inventory.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/payments.js"></script>
+    <script src="js/chat.js"></script>
+    <script src="js/finance.js"></script>
+    <script src="js/followup.js"></script>
+    <script src="js/notifications.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/view-public.js"></script>
+    <script src="js/view-modals.js"></script>
+    <script src="js/view-client.js"></script>
+    <script src="js/view-tech.js"></script>
+    <script src="js/view-admin.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
